@@ -1,6 +1,6 @@
 module "wp_database" {
   source  = "terraform-aws-modules/rds/aws"
-  version = "5.1.0"
+  version = "5.1.1"
 
   identifier        = "${var.app}-${terraform.workspace}"
   engine            = "mysql"
