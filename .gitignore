@@ -22,6 +22,6 @@ override.tf.json
 *.tfvars
 
 # ignore the hcl file (Dependency Lock File) as this repo represent a module
-*.hcl
+.terraform.lock.hcl
 
 .DS_STORE
