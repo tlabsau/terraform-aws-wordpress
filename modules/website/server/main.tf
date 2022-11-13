@@ -1,5 +1,4 @@
 data "aws_caller_identity" "current" {}
-data "aws_region" "current" {}
 
 locals {
   default_ami_amazon = "ami-02a66f06b3557a897"

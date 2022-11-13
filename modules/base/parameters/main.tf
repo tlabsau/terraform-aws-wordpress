@@ -23,6 +23,7 @@ resource "aws_ssm_parameter" "site_domain" {
   type      = "String"
   value     = local.site_domain
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "wordpress_username" {
@@ -30,6 +31,7 @@ resource "aws_ssm_parameter" "wordpress_username" {
   type      = "String"
   value     = local.wordpress_username
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "wordpress_password" {
@@ -37,6 +39,7 @@ resource "aws_ssm_parameter" "wordpress_password" {
   type      = "SecureString"
   value     = local.wordpress_password
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "database_name" {
@@ -44,6 +47,7 @@ resource "aws_ssm_parameter" "database_name" {
   type      = "String"
   value     = local.database_name
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "database_username" {
@@ -51,6 +55,7 @@ resource "aws_ssm_parameter" "database_username" {
   type      = "String"
   value     = local.database_username
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "database_password" {
@@ -58,6 +63,7 @@ resource "aws_ssm_parameter" "database_password" {
   type      = "SecureString"
   value     = local.database_password
   overwrite = true
+  tags      = var.tags
 }
 
 resource "aws_ssm_parameter" "database_table_prefix" {
@@ -65,4 +71,5 @@ resource "aws_ssm_parameter" "database_table_prefix" {
   type      = "String"
   value     = local.database_table_prefix
   overwrite = true
+  tags      = var.tags
 }
