@@ -9,7 +9,7 @@ Terraform module to build wordpress website in AWS with following best practices
 
 ## Introduction
 
-This repo represents a [terraform][https://www.terraform.io/] module to provision the needed resources to build wordpress website.
+This repo represents a [terraform][terraform-ref] module to provision the needed resources to build wordpress website.
 The repository contains the sourcefile for [tlabs][tlabs-ref] website, built using wordpress in docker, and terraform for infra-structure.
 
 - Read the full docs on [**how to use**][doc-ref]
@@ -33,5 +33,5 @@ The repository contains the sourcefile for [tlabs][tlabs-ref] website, built usi
 
 [terraform-ref]: https://www.terraform.io
 [tlabs-ref]: https://tlabs.au
-[email-ref]: admin@tlabs.au
+[email-ref]: mailto:admin@tlabs.au
 [doc-ref]: docs/index.md
