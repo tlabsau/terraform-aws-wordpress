@@ -28,11 +28,6 @@ variable "ec2_instance_id" {
   description = "Wordpress server instance ID"
 }
 
-variable "site_domain" {
-  type        = string
-  description = "The primary domain name of the website"
-}
-
 variable "certificate_domain" {
   type        = string
   description = "The primary domain name of the certificate in ACM"

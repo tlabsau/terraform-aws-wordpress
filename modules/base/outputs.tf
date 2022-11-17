@@ -1,11 +1,11 @@
 output "app_files_bucket" {
   description = "The website bucket to store the premium plugins and wordpress files"
-  value       = module.app-bucket.bucket_name
+  value       = module.app_bucket.bucket_name
 }
 
 output "bucket_arn" {
   description = "The ARN for website bucket that stores the premium plugins and wordpress files"
-  value       = module.app-bucket.bucket_arn
+  value       = module.app_bucket.bucket_arn
 }
 
 output "vpc_id" {

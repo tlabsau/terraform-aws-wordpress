@@ -47,13 +47,8 @@ variable "certificate_domain" {
 
 variable "waf_enabled" {
   description = "Flag to determine if WAF needed for the website"
+  type        = bool
   default     = false
-}
-
-variable "user_data_script_path" {
-  type        = string
-  description = "The path to the user data script file for wordpress ec2 instance"
-  default     = ""
 }
 
 variable "environments" {
