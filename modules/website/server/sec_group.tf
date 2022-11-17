@@ -1,5 +1,3 @@
-
-// Security Groups
 resource "aws_security_group" "ec2" {
   name   = "${var.app}-${terraform.workspace}-ec2-sg"
   vpc_id = var.vpc_id

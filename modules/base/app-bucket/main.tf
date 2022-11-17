@@ -1,4 +1,3 @@
-
 resource "aws_s3_bucket" "app_files" {
   bucket        = "${var.app}-${terraform.workspace}-app-files"
   tags          = var.tags

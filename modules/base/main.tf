@@ -1,4 +1,4 @@
-module "app-bucket" {
+module "app_bucket" {
   source = "./app-bucket"
   app    = var.app
   tags   = var.tags

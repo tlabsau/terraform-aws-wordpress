@@ -17,7 +17,6 @@ module "load_balancer" {
   public_subnet_ids  = var.public_subnet_ids
   ec2_sec_group_id   = module.server.sec_group_id
   ec2_instance_id    = module.server.instance_id
-  site_domain        = var.site_domain
   certificate_domain = var.certificate_domain
   depends_on = [
     module.server
